@@ -35,8 +35,10 @@ window.onload = () => {
 
   var doTick = false;
 
-  const tileXCount = Math.floor(window.innerWidth/SQUARE_SIZE) > 10 ? Math.floor(window.innerWidth/SQUARE_SIZE) : 10;
-  const tileYCount = Math.floor(window.innerHeight/SQUARE_SIZE) > 10 ? Math.floor(window.innerHeight/SQUARE_SIZE) : 10;
+  // const tileXCount = Math.floor(window.innerWidth/SQUARE_SIZE) > 10 ? Math.floor(window.innerWidth/SQUARE_SIZE) : 10;
+  // const tileYCount = Math.floor(window.innerHeight/SQUARE_SIZE) > 10 ? Math.floor(window.innerHeight/SQUARE_SIZE) : 10;
+  const tileXCount = 12;
+  const tileYCount = 12;
   const terrainWidth = tileXCount * SQUARE_SIZE;
   const terrainHeight = tileYCount * SQUARE_SIZE;
 
@@ -1166,8 +1168,6 @@ window.onload = () => {
 
   var engine = createEngine();
   var cars = [];
-  cars.push(createCar());
-  cars.push(createCar());
   cars.push(createCar());
   cars.push(createCar());
   cars.push(createCar());
